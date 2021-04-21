@@ -1,0 +1,177 @@
+Downloading/unpacking rpy2
+  Running setup.py (path:/tmp/pip-build-ki0g5qwt/rpy2/setup.py) egg_info for package rpy2
+    R version 3.2.2 (2015-08-14) -- "Fire Safety"
+    /usr/lib/R/bin/R CMD config --ldflags
+    /usr/lib/R/bin/R CMD config --cppflags
+    
+        Compilation parameters for rpy2's C components:
+            include_dirs    = ['/usr/share/R/include']
+            library_dirs    = ['/usr/lib/R/lib']
+            libraries       = ['R', 'pcre', 'lzma', 'bz2', 'z', 'rt', 'dl', 'm']
+            extra_link_args = ['-Wl,--export-dynamic', '-fopenmp']
+    
+    
+    R version 3.2.2 (2015-08-14) -- "Fire Safety"
+    warning: no files found matching 'README' anywhere in distribution
+    warning: no previously-included files matching '*patch*' found anywhere in distribution
+    warning: no previously-included files matching '*diff*' found anywhere in distribution
+    warning: no previously-included files matching '.hg' found anywhere in distribution
+    warning: no files found matching 'MANIFEST'
+    warning: no files found matching 'README'
+    warning: no files found matching 'MPL_LICENSE'
+    warning: no files found matching 'GPL_LICENSE'
+    warning: no files found matching 'LGPL_LICENSE'
+    no previously-included directories found matching 'dist'
+    warning: no files found matching 'doc/source/rpy2_logo.png'
+Requirement already satisfied (use --upgrade to upgrade): six in /home/hedata/dev/t_venv/lib/python3.4/site-packages (from rpy2)
+Installing collected packages: rpy2
+  Running setup.py install for rpy2
+    R version 3.2.2 (2015-08-14) -- "Fire Safety"
+    /usr/lib/R/bin/R CMD config --ldflags
+    /usr/lib/R/bin/R CMD config --cppflags
+    
+        Compilation parameters for rpy2's C components:
+            include_dirs    = ['/usr/share/R/include']
+            library_dirs    = ['/usr/lib/R/lib']
+            libraries       = ['R', 'pcre', 'lzma', 'bz2', 'z', 'rt', 'dl', 'm']
+            extra_link_args = ['-Wl,--export-dynamic', '-fopenmp']
+    
+    building 'r_utils' library
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I./rpy/rinterface -I/usr/share/R/include -c ./rpy/rinterface/r_utils.c -o build/temp.linux-x86_64-3.4/./rpy/rinterface/r_utils.o
+    In file included from /usr/share/R/include/Rdefines.h:25:0,
+                     from ./rpy/rinterface/r_utils.c:31:
+    /usr/share/R/include/R_ext/Memory.h:40:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+     int R_gc_running();
+     ^
+    In file included from /usr/share/R/include/Rdefines.h:29:0,
+                     from ./rpy/rinterface/r_utils.c:31:
+    /usr/share/R/include/Rinternals.h:870:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+     const char *R_curErrorBuf();
+     ^
+    x86_64-linux-gnu-gcc-ar rc build/temp.linux-x86_64-3.4/libr_utils.a build/temp.linux-x86_64-3.4/./rpy/rinterface/r_utils.o
+    R version 3.2.2 (2015-08-14) -- "Fire Safety"
+    building 'rpy2.rinterface._rinterface' extension
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -DR_INTERFACE_PTRS=1 -DHAVE_POSIX_SIGJMP=1 -DRIF_HAS_RSIGHAND=1 -DCSTACK_DEFNS=1 -DHAS_READLINE=1 -I./rpy/rinterface -I/usr/share/R/include -I/usr/include/python3.4m -I/home/hedata/dev/t_venv/include/python3.4m -c ./rpy/rinterface/_rinterface.c -o build/temp.linux-x86_64-3.4/./rpy/rinterface/_rinterface.o
+    In file included from /usr/share/R/include/R.h:46:0,
+                     from ./rpy/rinterface/_rinterface.h:8,
+                     from ./rpy/rinterface/_rinterface.c:58:
+    /usr/share/R/include/R_ext/Memory.h:40:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+     int R_gc_running();
+     ^
+    In file included from ./rpy/rinterface/_rinterface.h:9:0,
+                     from ./rpy/rinterface/_rinterface.c:58:
+    /usr/share/R/include/Rinternals.h:870:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+     const char *R_curErrorBuf();
+     ^
+    In file included from ./rpy/rinterface/_rinterface.c:70:0:
+    /usr/share/R/include/Rinterface.h:138:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+     extern void (*ptr_R_ProcessEvents)();
+     ^
+    In file included from ./rpy/rinterface/_rinterface.c:79:0:
+    /usr/share/R/include/R_ext/Rdynload.h:32:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+     typedef void * (*DL_FUNC)();
+     ^
+    In file included from ./rpy/rinterface/_rinterface.c:122:0:
+    ./rpy/rinterface/embeddedr.c: In function ‘SexpObject_clear’:
+    ./rpy/rinterface/embeddedr.c:48:12: warning: unused variable ‘res’ [-Wunused-variable]
+           SEXP res = rpy2_remove(Rf_mkString(name_buf),
+                ^
+    In file included from ./rpy/rinterface/_rinterface.c:125:0:
+    ./rpy/rinterface/sexp.c: In function ‘Sexp_init’:
+    ./rpy/rinterface/sexp.c:738:13: warning: unused variable ‘copy’ [-Wunused-variable]
+       PyObject *copy = Py_True;
+                 ^
+    In file included from ./rpy/rinterface/_rinterface.c:128:0:
+    ./rpy/rinterface/sequence.c: In function ‘VectorSexp_ass_slice’:
+    ./rpy/rinterface/sequence.c:461:11: warning: variable ‘len_R’ set but not used [-Wunused-but-set-variable]
+       R_len_t len_R;
+               ^
+    In file included from ./rpy/rinterface/_rinterface.c:58:0:
+    ./rpy/rinterface/_rinterface.c: At top level:
+    ./rpy/rinterface/_rinterface.h:203:44: warning: ‘PyRinterface_IsInitialized’ declared ‘static’ but never defined [-Wunused-function]
+       static PyRinterface_IsInitialized_RETURN PyRinterface_IsInitialized PyRinterface_IsInitialized_PROTO;
+                                                ^
+    ./rpy/rinterface/_rinterface.h:204:38: warning: ‘PyRinterface_FindFun’ declared ‘static’ but never defined [-Wunused-function]
+       static PyRinterface_FindFun_RETURN PyRinterface_FindFun PyRinterface_FindFun_PROTO;
+                                          ^
+    ./rpy/rinterface/_rinterface.h:205:20: warning: ‘embeddedR_isInitialized’ defined but not used [-Wunused-variable]
+       static PyObject *embeddedR_isInitialized;
+                        ^
+    In file included from ./rpy/rinterface/_rinterface.c:128:0:
+    ./rpy/rinterface/sequence.c:2168:1: warning: ‘ComplexVectorSexp_AsSexp’ defined but not used [-Wunused-function]
+     ComplexVectorSexp_AsSexp(PyObject *pyfloat) {
+     ^
+    In file included from ./rpy/rinterface/_rinterface.c:58:0:
+    ./rpy/rinterface/_rinterface.c: In function ‘EmbeddedR_ShowFiles’:
+    ./rpy/rinterface/_rinterface.h:72:5: warning: ‘gstate’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         PyGILState_Release(gstate);                 \
+         ^
+    ./rpy/rinterface/_rinterface.c:837:20: note: ‘gstate’ was declared here
+       PyGILState_STATE gstate;
+                        ^
+    In file included from ./rpy/rinterface/_rinterface.c:58:0:
+    ./rpy/rinterface/_rinterface.c: In function ‘EmbeddedR_ResetConsole’:
+    ./rpy/rinterface/_rinterface.h:72:5: warning: ‘gstate’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         PyGILState_Release(gstate);                 \
+         ^
+    ./rpy/rinterface/_rinterface.c:683:20: note: ‘gstate’ was declared here
+       PyGILState_STATE gstate;
+                        ^
+    ./rpy/rinterface/_rinterface.c: In function ‘EmbeddedR_WriteConsoleEx’:
+    ./rpy/rinterface/_rinterface.c:383:10: warning: ‘consolecallback’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+       result = PyEval_CallObject(consolecallback, arglist);
+              ^
+    In file included from ./rpy/rinterface/_rinterface.c:58:0:
+    ./rpy/rinterface/_rinterface.c: In function ‘EmbeddedR_ReadConsole’:
+    ./rpy/rinterface/_rinterface.h:72:5: warning: ‘gstate’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         PyGILState_Release(gstate);                 \
+         ^
+    ./rpy/rinterface/_rinterface.c:504:20: note: ‘gstate’ was declared here
+       PyGILState_STATE gstate;
+                        ^
+    In file included from ./rpy/rinterface/_rinterface.c:58:0:
+    ./rpy/rinterface/_rinterface.c: In function ‘EmbeddedR_CleanUp’:
+    ./rpy/rinterface/_rinterface.h:72:5: warning: ‘gstate’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         PyGILState_Release(gstate);                 \
+         ^
+    ./rpy/rinterface/_rinterface.c:985:20: note: ‘gstate’ was declared here
+       PyGILState_STATE gstate;
+                        ^
+    x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 build/temp.linux-x86_64-3.4/./rpy/rinterface/_rinterface.o -L/usr/lib/R/lib -Lbuild/temp.linux-x86_64-3.4 -Wl,--enable-new-dtags,-R/usr/lib/R/lib -lR -lpcre -llzma -lbz2 -lz -lrt -ldl -lm -lr_utils -o build/lib.linux-x86_64-3.4/rpy2/rinterface/_rinterface.cpython-34m.so -Wl,--export-dynamic -fopenmp
+    building 'rpy2.rinterface._rpy_device' extension
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -DR_INTERFACE_PTRS=1 -DHAVE_POSIX_SIGJMP=1 -DRIF_HAS_RSIGHAND=1 -DCSTACK_DEFNS=1 -DHAS_READLINE=1 -I/usr/share/R/include -Irpy/rinterface -I/usr/include/python3.4m -I/home/hedata/dev/t_venv/include/python3.4m -c ./rpy/rinterface/_rpy_device.c -o build/temp.linux-x86_64-3.4/./rpy/rinterface/_rpy_device.o
+    In file included from /usr/share/R/include/R.h:46:0,
+                     from ./rpy/rinterface/_rpy_device.c:32:
+    /usr/share/R/include/R_ext/Memory.h:40:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+     int R_gc_running();
+     ^
+    In file included from ./rpy/rinterface/_rpy_device.c:33:0:
+    /usr/share/R/include/Rinternals.h:870:1: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+     const char *R_curErrorBuf();
+     ^
+    ./rpy/rinterface/_rpy_device.c: In function ‘PyInit__rpy_device’:
+    ./rpy/rinterface/_rpy_device.c:1407:17: warning: variable ‘d’ set but not used [-Wunused-but-set-variable]
+       PyObject *m, *d;
+                     ^
+    ./rpy/rinterface/_rpy_device.c: At top level:
+    ./rpy/rinterface/_rpy_device.c:936:1: warning: ‘GrDev_clear’ defined but not used [-Wunused-function]
+     GrDev_clear(PyGrDevObject *self)
+     ^
+    ./rpy/rinterface/_rpy_device.c:1334:20: warning: ‘rpydevice_methods’ defined but not used [-Wunused-variable]
+     static PyMethodDef rpydevice_methods[] = {
+                        ^
+    x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 build/temp.linux-x86_64-3.4/./rpy/rinterface/_rpy_device.o -L/usr/lib/R/lib -Lbuild/temp.linux-x86_64-3.4 -Wl,--enable-new-dtags,-R/usr/lib/R/lib -lR -lpcre -llzma -lbz2 -lz -lrt -ldl -lm -lr_utils -o build/lib.linux-x86_64-3.4/rpy2/rinterface/_rpy_device.cpython-34m.so -Wl,--export-dynamic -fopenmp
+    
+    warning: no files found matching 'README' anywhere in distribution
+    warning: no previously-included files matching '*patch*' found anywhere in distribution
+    warning: no previously-included files matching '*diff*' found anywhere in distribution
+    warning: no previously-included files matching '.hg' found anywhere in distribution
+    warning: no files found matching 'MANIFEST'
+    warning: no files found matching 'README'
+    warning: no files found matching 'MPL_LICENSE'
+    warning: no files found matching 'GPL_LICENSE'
+    warning: no files found matching 'LGPL_LICENSE'
+    no previously-included directories found matching 'dist'
+    warning: no files found matching 'doc/source/rpy2_logo.png'
+Successfully installed rpy2
+Cleaning up...
